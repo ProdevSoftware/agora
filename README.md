@@ -1,16 +1,42 @@
-# agora
+# Agora Video Call App in Flutter
 
-A new Flutter project.
+The Agora Video Call App is a sample Flutter application that demonstrates how to integrate Agora's Video SDK for video calling functionality using Bloc State Management. This README provides a comprehensive guide on setting up, configuring, and running the application.
+
+## Features
+
+- **One-on-one video calls
+- **Mute/unmute audio
+- **Switch between front and rear cameras
+- **End call functionality
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+- **Flutter installed on your machine. Follow the instructions here to set up Flutter.
+- **An Agora account. Sign up here and obtain your App ID.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- **Configure Agora
+const String appId = "YOUR_APP_ID";
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Starting a Video Call
+- **Open the app on your device.
+- **Enter a channel name and press the "Join" button to start a video call.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## In-Call Features
+- **Mute/Unmute Audio: Tap the microphone icon to mute or unmute your audio.
+- **Switch Camera: Tap the camera switch icon to toggle between front and rear cameras.
+- **End Call: Tap the end call button to leave the call.
+
+## Dependencies
+- **agora_rtc_engine
+- **permission_handler
+- **share_plus
+- **google_fonts
+- **flutter_bloc
+- **freezed
+- **convex_bottom_bar
+- **signal_strength_indicator
