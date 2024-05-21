@@ -28,7 +28,7 @@ class VideoBloc extends Bloc<VideoEvent, VideoState> {
     emit(state.copyWith(rtcEngine: rtcEngine));
 
     await rtcEngine.initialize(const RtcEngineContext(
-      appId: '95d70b0c3e2b4a9ab3098bc2143bc278',
+      appId: 'your applicationId',
       channelProfile: ChannelProfileType.channelProfileCommunication,
     ));
 
@@ -60,9 +60,8 @@ class VideoBloc extends Bloc<VideoEvent, VideoState> {
     await rtcEngine.enableVideo();
     await rtcEngine.startPreview();
     await rtcEngine.joinChannel(
-      token:
-          '007eJxTYGgsnuUxZ9YZpXNyV3suHL8v/un+8+VcbEf+7jeZ6tP9abKuAoOlaYq5QZJBsnGqUZJJomVikrGBpUVSspGhiTGQNLdInu6Y1hDIyDD9DR8DIxSC+AIMBUX5Kallien5RYllyYk5OQwMAM81JqA=',
-      channelId: 'prodevagoravcall',
+      token: 'your token',
+      channelId: 'your channelId',
       uid: 0,
       options: const ChannelMediaOptions(),
     );
