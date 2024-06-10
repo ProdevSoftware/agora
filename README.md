@@ -56,15 +56,23 @@ dev_dependencies:
     <uses-permission  android:name="android.permission.MODIFY_AUDIO_SETTINGS"  />
     <uses-permission  android:name="android.permission.ACCESS_NETWORK_STATE"  />
     <uses-permission  android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-``` 
-```
     <uses-permission  android:name="android.permission.BLUETOOTH"  />
-```
+``` 
 ```
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 ```
+##  3. Code SetUp
+- Intialize
+ ```
+   final rtcEngine = createAgoraRtcEngine();
+
+    await rtcEngine.initialize(const RtcEngineContext(
+      appId: 'your applicationId',
+      channelProfile: ChannelProfileType.channelProfileCommunication,
+    ));
+ ```
 
 ## Videos
 https://github.com/ProdevSoftware/agora/assets/97152083/b9cb1913-3837-43c3-931f-1e23ef27d043
