@@ -30,15 +30,41 @@ const String appId = "YOUR_APP_ID";
 - Switch Camera: Tap the camera switch icon to toggle between front and rear cameras.
 - End Call: Tap the end call button to leave the call.
 
-## Dependencies
-- agora_rtc_engine
-- permission_handler
-- share_plus
-- google_fonts
-- flutter_bloc
-- freezed
-- convex_bottom_bar
-- signal_strength_indicator
+## 1. Dependencies
+- Add below dependencies in pubspec.yaml
+```
+  cupertino_icons: ^1.0.8
+  agora_rtc_engine: ^6.3.1
+  permission_handler: ^11.3.1
+  share_plus: ^9.0.0
+  google_fonts: ^6.2.1
+  flutter_bloc: ^8.1.5
+  freezed: ^2.5.2
+  signal_strength_indicator: ^0.4.1
+  convex_bottom_bar: ^3.2.0
+
+dev_dependencies:
+  flutter_lints: ^3.0.2
+  build_runner: ^2.4.9
+```
+## 2. Add this permission in AndroidManifest.xml file
+```
+    <uses-permission  android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission  android:name="android.permission.INTERNET"  />
+    <uses-permission  android:name="android.permission.RECORD_AUDIO"  />
+    <uses-permission  android:name="android.permission.CAMERA"  />
+    <uses-permission  android:name="android.permission.MODIFY_AUDIO_SETTINGS"  />
+    <uses-permission  android:name="android.permission.ACCESS_NETWORK_STATE"  />
+    <uses-permission  android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+``` 
+```
+    <uses-permission  android:name="android.permission.BLUETOOTH"  />
+```
+```
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+```
 
 ## Videos
 https://github.com/ProdevSoftware/agora/assets/97152083/b9cb1913-3837-43c3-931f-1e23ef27d043
