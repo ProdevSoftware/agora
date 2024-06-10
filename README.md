@@ -63,6 +63,15 @@ dev_dependencies:
         android:name="android.hardware.camera"
         android:required="false" />
 ```
+
+- Add this permission in  Info.plist file
+ ```
+<key>NSCameraUsageDescription</key>
+<string>$(PRODUCT_NAME) camera description.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>${PRODUCT_NAME} Microphone Usage</string>
+```
+
 ##  3. Code SetUp
 - Intialize
  ```
