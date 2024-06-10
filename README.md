@@ -72,6 +72,7 @@ dev_dependencies:
       appId: 'your applicationId',
       channelProfile: ChannelProfileType.channelProfileCommunication,
     ));
+
  ```
 
 ## Videos
